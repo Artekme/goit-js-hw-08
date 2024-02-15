@@ -1,0 +1,31 @@
+.gallery {
+  list-style-type: none;
+  width: 1128px;
+  height: 648px;
+  display: grid;
+  padding: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 24px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-image,
+.gallery-item,
+.gallery-link {
+  width: 360px;
+  height: 200px;
+}
+.gallery-image {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.gallery-image:hover {
+  transform: scale(1.04);
+  cursor: zoom-in;
+}
+
